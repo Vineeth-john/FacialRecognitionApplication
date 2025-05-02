@@ -20,13 +20,13 @@ Facial identification is performed using `create_data.py`. This script captures 
 
 
 
-# 🛒 BuyMe – Customer Representative Dashboard
+# BuyMe – Customer Representative Dashboard
 
-This repository contains the **Customer Representative Front-End Module** of **BuyMe**, an e-commerce auction platform. This dashboard enables support reps to manage auctions, users, customer queries, and account operations with a clean UI powered by Bootstrap and vanilla JavaScript.
+ This dashboard enables support reps to manage auctions, users, customer queries, and account operations.
 
 ---
 
-## 🚀 Features
+## Features
 
 The Customer Rep module supports the following functionalities:
 
@@ -39,7 +39,7 @@ The Customer Rep module supports the following functionalities:
   - Update buyer/seller usernames and emails.
   - Delete user accounts.
 - **Password Reset**
-  - Generate temporary passwords for users via email lookup.
+  - Generate temporary passwords for users via email lookup and sends notifications to the users.
 - **Auction & Bid Oversight**
   - View auctions with metadata (item, brand, category, etc.)
   - View auction details and item specifications in modals.
@@ -51,7 +51,27 @@ The Customer Rep module supports the following functionalities:
 
 ---
 
-## 📁 File Structure
+## Endpoints used
+
+GET    /rep/profile
+PUT    /rep/update-profile
+GET    /rep/user?email=
+PUT    /rep/user/<user_id>
+DELETE /rep/user/<user_id>
+
+PUT    /rep/reset-password
+
+GET    /rep/auctions
+DELETE /rep/remove-auction/<auction_id>
+GET    /rep/bids/<auction_id>
+DELETE /rep/remove-bid/<bid_id>
+POST   /rep/user              # (used to get bidder name)
+
+GET    /rep/queries
+PUT    /rep/queries/respond/<query_id>
+PUT    /rep/queries/close/<query_id>
+
+
 
 
 
