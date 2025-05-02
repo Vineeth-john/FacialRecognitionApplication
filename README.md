@@ -19,3 +19,39 @@ Facial identification is performed using `create_data.py`. This script captures 
 `main_new.py` integrates both features into a single program. It accesses the webcam in real-time and performs both facial identification and emotion recognition on the subject.
 
 
+
+# 🛒 BuyMe – Customer Representative Dashboard
+
+This repository contains the **Customer Representative Front-End Module** of **BuyMe**, an e-commerce auction platform. This dashboard enables support reps to manage auctions, users, customer queries, and account operations with a clean UI powered by Bootstrap and vanilla JavaScript.
+
+---
+
+## 🚀 Features
+
+The Customer Rep module supports the following functionalities:
+
+- **Dashboard Overview** – Welcome landing page with sidebar navigation.
+- **Profile Management**
+  - View rep profile details (Rep ID, Department, Shift, etc.)
+  - Update department and shift via a form.
+- **User Management**
+  - Search users by email.
+  - Update buyer/seller usernames and emails.
+  - Delete user accounts.
+- **Password Reset**
+  - Generate temporary passwords for users via email lookup.
+- **Auction & Bid Oversight**
+  - View auctions with metadata (item, brand, category, etc.)
+  - View auction details and item specifications in modals.
+  - Delete auctions or individual bids.
+- **Customer Queries**
+  - View unresolved queries submitted by users.
+  - Respond directly via text input.
+  - Mark queries as resolved.
+
+---
+
+## 📁 File Structure
+
+
+
