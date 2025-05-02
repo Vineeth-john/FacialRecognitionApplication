@@ -51,8 +51,9 @@ The Customer Rep module supports the following functionalities:
 
 ---
 
-## Endpoints used
+### Endpoints used
 
+```bash
 GET    /rep/profile
 PUT    /rep/update-profile
 GET    /rep/user?email=
@@ -70,6 +71,7 @@ POST   /rep/user              # (used to get bidder name)
 GET    /rep/queries
 PUT    /rep/queries/respond/<query_id>
 PUT    /rep/queries/close/<query_id>
+
 
 
 
